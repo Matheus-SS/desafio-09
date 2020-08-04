@@ -28,14 +28,16 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 - [x] criar customer
 
 ### Rotas
-- POST: http://localhost:3333/customers
+> POST: http://localhost:3333/customers
 
 - Parâmetros Body:
+```
   name:string
   email:string
---------------------//-----------//-------------------------------------------
+```
 
-## Tabela customers
+
+## Tabela products
 
 - id
 - name
@@ -50,12 +52,14 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 
 ### Funções
 - [x] criar product
+- [x] encontrar produto pelo nome
 
 ### Rotas
-- POST: http://localhost:3333/products
+> POST: http://localhost:3333/products
 
 - Parâmetros Body:
+```
   name:string
   price:number
   quantity:number
---------------------//-----------//-------------------------------------------
+```
