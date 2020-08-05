@@ -63,3 +63,12 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
   price:number
   quantity:number
 ```
+
+## Tabela orders
+
+- id
+- customer_id (foreign key)
+- price
+- quantity
+- created_at
+- updated_at
