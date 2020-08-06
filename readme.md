@@ -2,13 +2,10 @@
   <img src="src/images/01.jpg"/>
 </p>
 
-<p align="center">
 ![Badge](https://img.shields.io/github/issues/Matheus-SS/desafio-09)
 ![Badge](https://img.shields.io/github/forks/Matheus-SS/desafio-09)
 ![Badge](https://img.shields.io/github/stars/Matheus-SS/desafio-09)
 [![GitHub license](https://img.shields.io/github/license/Matheus-SS/desafio-09?style=plastic)](https://github.com/Matheus-SS/desafio-09/blob/master/LICENSE)
-</p>
-
 
 
 # Desafio 09
@@ -21,10 +18,7 @@ Para nos ajudar nesse desafio, a rocketseat criou um modelo que devemos utilizar
 Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 
 
-### Em construção
-
-## Nome do banco de dados
-- gostack_desafio09
+> Status do Projeto: Concluido :heavy_check_mark:
 
 ## Tabela customers
 
