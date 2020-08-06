@@ -140,3 +140,5 @@ http://localhost:3333/orders/3032e4a2-6a59-4e3d-9ced-f13a7fb853d8
 
 > Necessária a criação desta tabela, pois existe um relacionamento de N:N da tabela products com a tabela orders.
 
+
+>> Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Matheus-SS/desafio-09/blob/master/LICENSE) para mais detalhes.
