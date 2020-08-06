@@ -1,7 +1,9 @@
 ![Badge](https://img.shields.io/github/issues/Matheus-SS/desafio-09)
 ![Badge](https://img.shields.io/github/forks/Matheus-SS/desafio-09)
 ![Badge](https://img.shields.io/github/stars/Matheus-SS/desafio-09)
-[![GitHub license](https://img.shields.io/github/license/Matheus-SS/desafio-09?style=plastic)](https://github.com/Matheus-SS/desafio-09/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Matheus-SS/desafio-09)](https://github.com/Matheus-SS/desafio-09/blob/master/LICENSE)
+
+<img src="src/images/01.jpg"/>
 
 # Desafio 09
 Desafio do bootcamp da rocketseat para aprender novas coisas e treinar o que nós já aprendemos até agora no Node.js junto ao TypeScript, incluindo o uso de banco de dados com o TypeORM, e relacionamentos ManyToMany!
