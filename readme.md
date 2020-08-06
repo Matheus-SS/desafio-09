@@ -70,7 +70,7 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 - [x] Encontrar produtos pelo ID
 - [x] Atualizar quantidade em estoque
 
-### Sevices
+### Services
 - [x] criar product
 
 ### Rotas
