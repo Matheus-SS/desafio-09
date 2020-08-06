@@ -114,6 +114,7 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 ### Rotas
 > POST: http://localhost:3333/orders
 
+#### Criar order
 - Parâmetros Body:
 ```
 {
@@ -126,6 +127,7 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 	 ]
   }
 ```
+#### Encontrar order
 > GET: http://localhost:3333/orders/" {Um ID de order válido} "
 
 #### Exemplo:
