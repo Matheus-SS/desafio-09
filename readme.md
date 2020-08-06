@@ -44,8 +44,10 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 
 - Parâmetros Body:
 ```
+{
   name:string
   email:string
+}
 ```
 
 
@@ -76,9 +78,11 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 
 - Parâmetros Body:
 ```
+{
   name:string
   price:number
   quantity:number
+}
 ```
 
 ## Tabela orders
@@ -112,15 +116,15 @@ Link: https://github.com/Rocketseat/gostack-template-typeorm-relations
 
 - Parâmetros Body:
 ```
-  {
+{
 	"customer_id":string,
 	"products": [
-		{
-		"id":string,
-		"quantity":number
-	  }
-	]
-}
+		 {
+		   "id":string,
+		   "quantity":number
+	   }
+	 ]
+  }
 ```
 > GET: http://localhost:3333/orders/" {Um ID de order válido} "
 
