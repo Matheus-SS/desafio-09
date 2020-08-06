@@ -1,7 +1,7 @@
 ![Badge](https://img.shields.io/github/issues/Matheus-SS/desafio-09)
 ![Badge](https://img.shields.io/github/forks/Matheus-SS/desafio-09)
 ![Badge](https://img.shields.io/github/stars/Matheus-SS/desafio-09)
-[![GitHub license](https://img.shields.io/github/license/Matheus-SS/desafio-09)](https://github.com/Matheus-SS/desafio-09/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Matheus-SS/desafio-09?style=plastic)](https://github.com/Matheus-SS/desafio-09/blob/master/LICENSE)
 
 <img src="src/images/01.jpg"/>
 
