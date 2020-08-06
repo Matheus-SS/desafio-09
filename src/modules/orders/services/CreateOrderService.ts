@@ -38,14 +38,56 @@ class CreateOrderService {
     if (!checkCustomerExists) {
       throw new AppError('Customer does not exists');
     }
+
+    const arrayOfProductIds = products.map(product => ({
+      id: product.id,
+    }));
+
+    const arrayOfFoundProducts = await this.productsRepository.findAllById(
+      arrayOfProductIds,
+    );
+
+    const arrayOfFoundProductsId = arrayOfFoundProducts.map(product => ({
+      id: product.id,
+    }));
+
+    // this will return a array with products thats does NOT exists
+    const productsNotExists = arrayOfProductIds.filter(
+      productId =>
+        !arrayOfFoundProductsId.find(
+          foundProductId => productId.id === foundProductId.id,
+        ),
+    );
+
+    if (productsNotExists.length !== 0) {
+      throw new AppError(
+        `These products do not exist: ${productsNotExists.map(
+          prod => prod.id,
+        )}`,
+      );
+    }
+
+    products.forEach(product => {
+      const quantityInDatabase = arrayOfFoundProducts.find(
+        ({ id }) => id === product.id,
+      )?.quantity;
+
+      if ((quantityInDatabase || 0) < product.quantity) {
+        throw new AppError('Quantity out of stock');
+      }
+    });
+
     const order = await this.ordersRepository.create({
       customer: checkCustomerExists,
       products: products.map(product => ({
         product_id: product.id,
         quantity: product.quantity,
-        price: 5,
+        price:
+          arrayOfFoundProducts.find(({ id }) => id === product.id)?.price || 0,
       })),
     });
+
+    await this.productsRepository.updateQuantity(products);
 
     return order;
   }
